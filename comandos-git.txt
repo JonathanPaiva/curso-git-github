@@ -1,1 +1,4 @@
 https://devhints.io/git-log
+
+https://git-school.github.io/visualizing-git/
+
