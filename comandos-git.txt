@@ -2,3 +2,94 @@ https://devhints.io/git-log
 
 https://git-school.github.io/visualizing-git/
 
+-------------------------------------------------------
+
+Comandos básicos
+
+> git clone /c/Users/ALURA/Documents/git-e-github/servidor projeto
+    = Clona um repositório já existente dando um nome a pasta de trabalho, nesse caso 'projeto'
+
+> git init
+    = Inicia o git numa pasta de projeto
+
+> git init --bare
+    = Criar um repositório puro
+
+> git status
+    = Verificar as alterações realizadas nos arquivos.
+
+> git add . 
+    = Adiciona todos os arquivos alterados ou pode ser utilizado o nome do arquivo em vez do ponto.
+
+> git commit -m "mensagem do comite" 
+    = Cria um comite com as alterações realizadas nos arquivos adicionados
+
+> git log
+    = Veremos os comites realizados
+
+> git log -p
+    = Veremos as modificações realizadas
+
+> git log --oneline
+    = Verifica todos os comites enviados ao repositório remoto/local
+
+> git remote add local [diretório ou link]
+    = Adiciona o repositório remoteo(origin) ou local 
+
+> git remote 
+    = Mostra o nome do repositório.
+
+> git remote -v
+    = Mostra o nome do repositório e o diretório onde ele está.
+
+> git remote remove [nome do remote]
+    = Remove o diretório remoto
+
+> git branch
+    = Lista todas as branchs criadas e mostra a qual está selecionada no momento.
+
+> git branch -m [Nome da Branch]
+    = Cria um branch com o nome indicado
+
+> git branch -D [Nome da Branch]
+    = Deleta uma branch com o nome indicado
+
+> git checkout [Nome da Branch]
+    = Entra na branch indicada
+
+> git stash
+    = Serve para armazenar temporariamente as alterações realizadas para serem trazidas posteriormente ao arquivo de edição.
+
+> git stash list 
+    = Serve para listar todos os stashs criados
+
+> git stash apply 0 
+    = Serve para aplicar aos arquivos as alterações armazenadas no stash ( zero seria o índice do stash)
+
+> git stash drop 
+    = Para retirar o stash da listgem
+
+> git stash pop 
+    = Realiza o merge das informações do stash com os arquivos do projeto e dropa os stash's da listagem.
+
+> git merge [nome da branch]
+    = Unifica as informações da branch passada com a atual.
+
+> git rebase [nome da branch]
+    = Unifica as informações da branch passada com a atual, porém também pegará os comites realizados na branch passada
+
+> git reset HEAD [nome do arquivo]
+    = Desfazer uma alteração que já foi marcada para ser commitada, usado o (git add . ou [nome do arquivo])
+
+> git revert [hash do commit]
+    = Defaz um comite passado através do ID (podendo ser pego através do git log) e cria um novo comite com essa ação.
+
+> git checkout -- [nome do arquivo]
+    = Serve para deixar em estados do repositório, seja por meio de branches ou desfazendo modificações no arquivo (Isso antes de criar um comite)
+
+> git pull origin main
+    = Atualiza o projeto atual com as informações do repositório remoto/local
+
+> git push origin main
+    = Encaminha as alterações comitadas para o repositório remoto/local
+
