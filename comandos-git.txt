@@ -33,6 +33,9 @@ Comandos básicos
 > git log --oneline
     = Verifica todos os comites enviados ao repositório remoto/local
 
+> git diff
+    = Mostra o que foi alterado e que ainda não foi adicionado para commit
+
 > git remote add local [diretório ou link]
     = Adiciona o repositório remoteo(origin) ou local 
 
@@ -93,3 +96,8 @@ Comandos básicos
 > git push origin main
     = Encaminha as alterações comitadas para o repositório remoto/local
 
+> git tag -a [Nome da tag, podendo ser a versão v0.1.0] -m "Mensagem dessa tag"
+    = Criar um ponto na aplicação, no qual não será possível retornar aos comites antes desse ponto.
+
+> git push origin [nome da tag]
+    = Encaminha a tag ao repositório remoto criando uma release
